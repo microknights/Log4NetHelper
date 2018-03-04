@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard1.3</TargetFramework>
+    <Version>1.0.0-alpha2</Version>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Authors>Frank Løvendahl Nielsen</Authors>
+    <Company>MicroKnights ApS</Company>
+    <PackageProjectUrl>https://github.com/microknights/Log4NetHelper</PackageProjectUrl>
+    <Copyright>MicroKnights ApS 2018</Copyright>
+    <Description>Set ConnectionString manually, Enable internal Debugging, Show configuration messages</Description>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MicroKnights.Log4NetAdoNetAppender" Version="1.0.1" />
+  </ItemGroup>
+
+</Project>
