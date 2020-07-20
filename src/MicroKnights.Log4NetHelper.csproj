@@ -2,24 +2,14 @@
 
   <PropertyGroup>
     <TargetFrameworks>netstandard1.3;netstandard2.0;netstandard2.1</TargetFrameworks>
-    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
     <Authors>Frank Løvendahl Nielsen</Authors>
     <Company>MicroKnights ApS</Company>
     <PackageProjectUrl>https://github.com/microknights/Log4NetHelper</PackageProjectUrl>
     <Copyright>MicroKnights ApS 2018</Copyright>
+    <PackageId>MicroKnights.Log4NetHelper</PackageId>
+    <PackageTags>log4net adonetappender helper</PackageTags>
     <Description>Set ConnectionString manually, Enable internal Debugging, Show configuration messages</Description>
-  </PropertyGroup>
-
-  <PropertyGroup>
-    <TargetFramework>netstandard1.3</TargetFramework>
-  </PropertyGroup>
-
-  <PropertyGroup>
-    <TargetFramework>netstandard2.0</TargetFramework>
-  </PropertyGroup>
-
-  <PropertyGroup>
-    <TargetFramework>netstandard2.1</TargetFramework>
   </PropertyGroup>
 
   <ItemGroup Condition="'$(TargetFramework)' == 'netstandard1.3'">
@@ -28,7 +18,7 @@
   </ItemGroup>
 
   <ItemGroup Condition="'$(TargetFramework)' == 'netstandard2.0'">
-    <PackageReference Include="MicroKnights.Log4NetAdoNetAppender" Version="2.0.0" />
+    <PackageReference Include="MicroKnights.Log4NetAdoNetAppender" Version="2.1.*" />
     <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="2.0.2" />
   </ItemGroup>
 
